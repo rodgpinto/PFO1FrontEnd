@@ -1,6 +1,8 @@
 # Checklist - Práctica Formativa Obligatoria 1
 
 **URL del sitio en vivo (Vercel):** https://pfo-1-front-end.vercel.app/
+
+
 **URL del repositorio:** https://github.com/rodgpinto/PFO1FrontEnd
 
 ## 1. Descripción del Proyecto
