@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer PFO - Mi Portafolio Personal</title>
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./img/favicon-48x48.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!-- Aquí tenemos el header, se muestra la barra de navegación de la página. -->
+        <!-- Como mejora podría agregar funcionalidad de tema claro/oscuro y menu hamburguesa para moviles. -->
+
+        <a href="#inicio"><img src="./img/logo.png" alt="Logotipo RGP" class="logo"></a>
+
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Acerca de mí</a></li>
+                <li><a href="#tarjetas">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="inicio">
+
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>
+                Soy un desarrollador Full Stack Junior con sólidos fundamentos en tecnologías frontend (HTML, CSS,
+                JavaScript) y lenguajes backend de fuerte adopción empresarial (Java, C#). Mi enfoque se centra en la
+                creación de aplicaciones eficientes, priorizando el código limpio y la gestión estructurada de bases de
+                datos relacionales como MySQL y SQL Server.
+
+                Me apasiona resolver problemas reales mediante arquitecturas escalables y mantenibles. Actualmente,
+                estoy enfocado en dominar frameworks modernos como React y Spring Boot, además de familiarizarme con
+                herramientas clave para el ciclo de vida del software y despliegue, como Docker y entornos cloud (AWS).
+
+                Mi objetivo principal es integrarme a un equipo de desarrollo profesional, aportar valor y proactividad
+                desde el primer día, y consolidar mi carrera construyendo productos de software que generen un impacto
+                real en el negocio.
+            </p>
+            <img src="./img/perfil.jpg" alt="Foto de perfil" class="img-perfil">
+        </section>
+
+        <!-- Aquí tenemos la sección de tarjetas, mostrando mis proyectos realizados. -->
+        <!-- Como punto de mejora, se podría agregar mas imagenes reales del proyecto con animaciones deplegables, link al proyecto o video de demostración -->
+        <section id="tarjetas">
+            <h2>Mis Proyectos</h2>
+            <div class="tarjetas-container">
+                <article class="tarjeta">
+                    <img src="./img/dynamislogo.png" alt="Captura del proyecto Dynamis - CRUD de gimnasio">
+                    <h3>Dynamis</h3>
+                    <p>Proyecto desarrollado en Kotlin enfocado en la gestión (CRUD) para un gimnasio.</p>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="./img/pipogaslogo.png" alt="Captura de la landing page PipoGas">
+                    <h3>PipoGas</h3>
+                    <p>
+                        Landing page para empresa distribuidora de gas envasado.
+
+                    </p>
+                    <p>
+                        Utilizando HTML, CSS y JavaScript para crear una experiencia de usuario atractiva y funcional.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="habilidades">
+            <h2>Mis Habilidades</h2>
+            <div class="habilidades-listado">
+                <h3>Tecnologías conocidas:</h3>
+                <ul>
+                    <li><strong>Frontend:</strong> HTML, CSS, JavaScript, React</li>
+                    <li><strong>Backend:</strong> Java con Spring, .NET</li>
+                    <li><strong>Base de Datos:</strong> MySQL, SQLite, SQL Server</li>
+                </ul>
+
+                <h3>En proceso de aprendizaje:</h3>
+                <ul>
+                    <li>Python, Node.js con Express, MongoDB, Entorno AWS, Docker</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Aquí tenemos la sección de contacto, tenemos los input correspondientes para completar y contactar. -->
+        <!-- Como punto de mejora se podría implementar validación con JS. Y envío de correos reales utilizando por ejemplo Formspree -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="#" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+
+        <!-- Aquí tenemos la sección de peliculas, mostrando mis tres películas favoritas. -->
+        <!-- Como punto a mejorar, se podría implementar un carrusel para el muestreo de las cards. -->
+         <!-- También se podría agregar más detalles sobre cada película, ranking, video de trailer, vistas, en que plataforma se encuentran. -->
+        <section id="películas">
+            <h2>Mís Películas Favoritas</h2>
+
+            <article class="pelicula">
+                <h3>Interestelar</h3>
+                <img src="./img/interestelar.jpg" alt="Póster de la película Interestelar">
+                <p>Gracias a un descubrimiento, un grupo de científicos y exploradores, encabezados por Cooper, se
+                    embarcan en un viaje espacial para encontrar un lugar con las condiciones necesarias para reemplazar
+                    a la Tierra y comenzar una nueva vida allí.</p>
+            </article>
+
+            <article class="pelicula">
+                <h3>Hombre en llamas</h3>
+                <img src="./img/manOnFire.jpg" alt="Póster de la película Hombre en llamas">
+                <p>Contratado como guardaespaldas de una niña de nueve años, hija de un rico empresario, un exagente de
+                    la CIA se venga de sus captores en México, una ciudad asediada por una ola de secuestros..</p>
+            </article>
+
+            <article class="pelicula">
+                <h3>Batman: El Caballero de la Noche</h3>
+                <img src="./img/batman.jpg" alt="Póster de la película Batman El Caballero de la Noche">
+                <p>Batman tiene que mantener el equilibrio entre el heroísmo y el vigilantismo para pelear contra un vil
+                    criminal conocido como el Guasón, que pretende orillar a Ciudad Gótica a la anarquía.</p>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="https://github.com/rodgpinto" target="_blank">GitHub</a>
+            <a href="mailto:rodrigo.guillermo.pinto@gmail.com">Correo</a>
+        </div>
+        <p>&copy; 2026 - Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
